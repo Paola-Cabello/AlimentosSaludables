@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap
+}
+
+header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+
+h2, h3 {
+    color: rgb(172, 78, 47);
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.sitios,  .loguito {
+    display: flex;
+    font-display: flex;
+    justify-content: center;
+
+}
+
+nav ul, h1, .elParrafo {
+    color: rgb(13, 63, 60);
+}
+
+.elParrafo {
+    border: 1em solid white;
+}
+
+a {
+    color: rgb(172, 78, 47);
+    text-decoration: none;
+    margin-left: 0.5em;
+
+}
+
+footer {
+    padding: 3em;
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+.loguito, .flecha {
+    width: 100px;
+    height: 100px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: end
+}
+
+/*declar el área de grilla*/
+
+header {
+    grid-area: header;
+}
+
+.imagenUno {
+    grid-area: imagenu;
+}
+
+h1 {
+    grid-area: huno;
+}
+
+.elParrafo {
+    grid-area: elparrafo;
+}
+
+.eventos {
+    grid-area: eventos;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.envoltura {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "imagenu"
+        "huno"
+        "elparrafo"
+        "eventos"
+        "redes"
+        "footer";
+    gap: 20px;
+}
+
+
+
+.imagenUno {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+h1 {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.elParrafo {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.eventos {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.redes {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    border: 0.5em solid black;
+    margin-top: 5em;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media (min-width:500px) {
+    .envoltura {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "header    header"
+            "imagenu   imagenu"
+            "huno      huno"
+            "elparrafo elparrafo"
+            "eventos   redes"
+            "footer    footer";
+        gap: 20px;
+
+    }
+
+    .sitios, .loguito {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1, .elParrafo {
+
+        border: 0.5em solid rgb(62, 85, 85);
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+}
+
+
+
+@media (min-width:768px) {
+    .envoltura {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "header    header       header"
+            "imagenu   imagenu      imagenu"
+            "huno      huno         huno"
+            "elparrafo elparrafo    elparrafo"
+            "eventos   eventos      redes"
+            "footer    footer       footer";
+        gap: 20px;
+    }
+
+    a {
+        color: black;
+    }
+
+    h1 {
+        color: black;
+        border: 3px solid white;
+    }
+
+    .elParrafo, h2 {
+        color: darkslategrey;
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    .elParrafo {
+        border: 3em solid darkslategrey;
+    }
+
+    h1 {
+        background-color: rgb(252, 191, 169);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .elParrafo {
+        background-color: rgb(228, 144, 114);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .loguito {
+        border: 0.5em solid rgb(252, 191, 169);
+    }
+
+    h3 {
+        color: black;
+    }
+
+    footer {
+        margin-top: 1.5em;
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .sitios {
+        margin: 2em 10em 2em 10em;
+    }
+
+    .imagenUno,  h1, .elParrafo,  .eventos,.redes {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .loguito {
+        border: 0.5em solid rgb(252, 191, 169);
+    }
+
+    .elParrafo, h2 {
+        color: rgb(104, 60, 85);
+    }
+
+    .elParrafo {
+        border: 1em solid rgb(241, 145, 110);
+    }
+
+    h1 {
+        color: rgb(133, 46, 95);
+    }
+
+    img {
+        width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+}
+
+/*declarar grid haz tu pedido*/
+.hDos {
+    grid-area: hdos;
+}
+
+.mandados {
+    grid-area: mandados;
+}
+
+.budyalf {
+    grid-area: budyalf;
+}
+
+.rowUno {
+    grid-area: rowuno;
+}
+
+.mym {
+    grid-area: mym;
+}
+
+.rowDos {
+    grid-area: rowdos;
+}
+
+.redes {
+    grid-area: redess;
+}
+
+footer {
+    grid-area: footerr;
+}
+
+.envolturaDos {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "hdos"
+        "mandados"
+        "budyalf"
+        "rowuno"
+        "mym"
+        "rowdos"
+        "redess"
+        "footerr";
+    gap: 20px;
+}
+
+
+
+.mandados {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.budyalf {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.rowUno {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.mym {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.rowDos {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.moto {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.whatsapp {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.h2,.mym,.mandados {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+body {
+    background-color: rgb(252, 191, 169);
+}
+
+@media (min-width:500px) {
+    .envolturaDos {
+        margin-bottom: 1.5em;
+        margin-top: 0;
+        display: grid;
+        grid-template-areas:
+            "hdos         hdos"
+            "mandados     mandados"
+            "budyalf      budyalf"
+            "rowuno       rowuno"
+            "mym          mym"
+            "rowdos       rowdos"
+            "redess        redess"
+            "footerr       footerr";
+        gap: 20px;
+    }
+
+    .moto,  .whatsapp, .in {
+        border: 3px solid rgb(62, 85, 85);
+    }
+
+    .moto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .whatsapp {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mandados {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width:768px) {
+    .envolturaDos {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "hdos           hdos         hdos"
+            "mandados       mandados     mandados"
+            "budyalf        budyalf      budyalf"
+            "rowuno         rowuno       rowuno"
+            "mym            mym          mym"
+            "rowdos         rowdos       rowdos"
+            "redess         redess        redess"
+            "footerr         footerr       footerr";
+        gap: 20px;
+    }
+
+    .imgDos {
+        width: 200px;
+        height: 200px;
+        margin: 0.5em 0.5em 0.5em 0.5em;
+    }
+
+    .avUno, .avDos, .avTres,  .avCuatro {
+        display: flex;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .mandados,.budyalf,.rowUno,.mym,.rowDos {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .imgDos {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .loguito {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*declarar grid galeria*/
+.hTres {
+    grid-area: htres;
+}
+
+.productos {
+    grid-area: productos;
+}
+
+.fotosProd {
+    grid-area: fotosprod;
+}
+
+.redes {
+    grid-area: redesss;
+}
+
+footer {
+    grid-area: footerrr;
+}
+
+.envolturaTres {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "htres"
+        "productos"
+        "fotosprod"
+        "redesss"
+        "footerrr";
+    gap: 20px;
+}
+
+@media (min-width:500px) {
+    .envolturaTres {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "htres        htres"
+            "productos    productos"
+            "fotosprod    fotosprod"
+            "redesss      redesss"
+            "footerrr     footerrr";
+        gap: 20px;
+
+    }
+}
+
+@media (min-width:768px) {
+    .envolturaTres {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "htres        htres         htres"
+            "productos    productos     productos"
+            "fotosprod    fotosprod     fotosprod"
+            "redesss      redesss       redesss"
+            "footerrr     footerrr      footerrr";
+        gap: 20px;
+    }
+
+    .avone, .avtwo, .avthree {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgTres {
+        width: 250px;
+        height: 250px;
+        margin: 1.5em 1.5em 1.5em 1.5em;
+    }
+
+    .texto {
+        text-align: center;
+        border: 0.5em;
+        background-color: rgb(151, 175, 175);
+        margin-left: 1em;
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .imgTres {
+        width: 350px;
+        height: 350px;
+        margin: 2em 3em 2em 3em;
+
+    }
+
+    .texto {
+        background-color: rgb(252, 191, 169);
+    }
+}
+
+/*declarar grid contacto*/
+.hCuatro {
+    grid-area: hcuatro;
+}
+
+.imagenn {
+    grid-area: imagenn;
+}
+
+.contactanos {
+    grid-area: contactanos;
+}
+
+.datos {
+    grid-area: datos;
+}
+
+.redes {
+    grid-area: redesuno;
+}
+
+footer {
+    grid-area: footeruno;
+}
+
+.envolturaCuatro {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "hcuatro"
+        "imagenn"
+        "contactanos"
+        "datos"
+        "redesuno"
+        "footeruno";
+    gap: 20px;
+}
+
+.avena {
+    width: 300px;
+    height: 50px;
+    border: none;
+}
+
+.datos {
+    border: 1em solid rgb(62, 85, 85);
+}
+
+@media (min-width:500px) {
+    .envolturaCuatro {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "hcuatro       hcuatro"
+            "imagenn       imagenn"
+            "contactanos   contactanos"
+            "datos         datos"
+            "redesuno      redesuno"
+            "footeruno     footeruno";
+        gap: 20px;
+
+    }
+
+    .avena {
+        width: 400px;
+        height: 60px;
+        border: 0.5em solid black;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .contactto {
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width:768px) {
+    .envolturaCuatro {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "hcuatro       hcuatro         hcuatro"
+            "imagenn       imagenn         imagenn"
+            "contactanos   contactanos     contactanos"
+            "datos         datos           datos"
+            "redesuno      redesuno        redesuno"
+            "footeruno     footeruno       footeruno"
+        ;
+        gap: 20px;
+    }
+
+    .avena {
+        width: 600px;
+        height: 70px;
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .avena {
+        width: 700px;
+        height: 70px;
+    }
+
+    .datos {
+        border: 1em solid rgb(241, 145, 110);
+    }
+}
+
+/*declarar grid beneficios*/
+.hCinco {
+    grid-area: hcinco;
+}
+
+.info {
+    grid-area: info;
+}
+
+.redes {
+    grid-area: redesdos;
+}
+
+footer {
+    grid-area: footerdos;
+}
+
+.envolturaCinco {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "hcinco"
+        "info"
+        "redesdos"
+        "footerdos";
+    gap: 20px;
+}
+iframe{
+    border: 0.5em solid  rgb(62, 85, 85);
+}
+.benef {
+    margin-bottom: 1em;
+}
+
+.beneficios {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+@media (min-width:500px) {
+    .envolturaCinco {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "hcinco      hcinco"
+            "info        info"
+            "redesdos    redesdos"
+            "footerdos   footerdos";
+        gap: 20px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .envolturaCinco {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "hcinco      hcinco      hcinco"
+            "info        info        info"
+            "redesdos    redesdos    redesdos"
+            "footerdos   footerdos   footerdos";
+        gap: 20px;
+    }
+
+    .importante {
+        border: 1em solid rgb(151, 175, 175);
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .importante {
+        border: 1em solid rgb(241, 145, 110);
+    }
+}
