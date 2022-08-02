@@ -21,7 +21,10 @@ header {
     display: grid;
     justify-content: center;
 }
-
+.btn.btn-primary{
+    background-color:rgb(102, 139, 138) ;
+    border: none;
+}
 h2, h3 {
     color: rgb(172, 78, 47);
 }
@@ -69,6 +72,10 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-items: end
+}
+
+.container-fluid{
+    background-color: rgb(151, 175, 175) ;
 }
 
 /*declar el área de grilla*/
@@ -248,7 +255,9 @@ footer {
     a {
         color: black;
     }
-
+    .container-fluid{
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+    }
     h1 {
         color: black;
         border: 3px solid white;
@@ -306,7 +315,10 @@ footer {
     .sitios {
         margin: 2em 10em 2em 10em;
     }
-
+    .btn.btn-primary{
+        background-color:rgb(91, 74, 100) ;
+        border: none;
+    }
     .imagenUno,  h1, .elParrafo,  .eventos,.redes {
         background-color: rgb(184, 199, 199);
     }
