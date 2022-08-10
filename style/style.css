@@ -95,8 +95,8 @@ footer {
 }
 
 .event{
-    width:1000px;
-    height: 350px;
+    width:350px;
+    height: 150px;
 }
 /*declar el área de grilla*/
 
@@ -248,6 +248,11 @@ footer {
         height: 300px;
     }
 
+    .event{
+        width:1000px;
+        height: 350px;
+    }
+
     footer {
         margin-top: 0;
     }
@@ -363,6 +368,10 @@ footer {
         width: 475px;
         height: 400px;
         margin-top: 20px;
+    }
+    .event{
+        width:1050px;
+        height: 350px;
     }
 }
 
