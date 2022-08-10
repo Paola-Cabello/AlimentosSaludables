@@ -33,12 +33,17 @@ nav ul li {
     list-style-type: none;
 }
 
+ul li{
+    list-style-type: none; 
+}
+
 .sitios,  .loguito {
     display: flex;
     font-display: flex;
     justify-content: center;
 
 }
+
 
 nav ul, h1, .elParrafo {
     color: rgb(13, 63, 60);
@@ -55,10 +60,6 @@ a {
 
 }
 
-
-a:hover{
-    background-color:rgb(139, 163, 162) 
-}
 footer {
     padding: 3em;
     background-color: rgb(151, 175, 175);
@@ -66,11 +67,16 @@ footer {
     margin-top: 1.5em;
 }
 
-.loguito, .flecha {
+.loguito {
     width: 100px;
     height: 100px;
 }
 
+#flechita{
+    width: 100px;
+    height: 100px;
+    border: none;
+}
 .redes {
     display: flex;
     flex-direction: column;
@@ -82,6 +88,16 @@ footer {
     background-color: rgb(151, 175, 175) ;
 }
 
+.avena {
+    width: 600px;
+    height: 50px;
+    border: none;
+}
+
+.event{
+    width:1000px;
+    height: 350px;
+}
 /*declar el área de grilla*/
 
 header {
@@ -696,11 +712,7 @@ footer {
     gap: 20px;
 }
 
-.avena {
-    width: 300px;
-    height: 50px;
-    border: none;
-}
+
 
 .datos {
     border: 1em solid rgb(62, 85, 85);
