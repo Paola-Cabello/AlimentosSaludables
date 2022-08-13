@@ -1,0 +1,14 @@
+.envoltura {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "imagenu"
+        "huno"
+        "elparrafo"
+        "eventos"
+        "redes"
+        "footer";
+    gap: 20px;
+}

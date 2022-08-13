@@ -1,0 +1,28 @@
+/*declar el área de grilla*/
+header {
+    grid-area: header;
+}
+
+.container {
+    grid-area: imagenu;
+}
+
+h1 {
+    grid-area: huno;
+}
+
+.elParrafo {
+    grid-area: elparrafo;
+}
+
+.eventos {
+    grid-area: eventos;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+footer {
+    grid-area: footer;
+}

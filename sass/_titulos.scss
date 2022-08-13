@@ -1,0 +1,28 @@
+h2, h3 {
+    color: rgb(172, 78, 47);
+}
+nav ul, h1, .elParrafo {
+    color: rgb(13, 63, 60);
+}
+
+.elParrafo {
+    border: 1em solid white;
+}
+
+h1 {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.elParrafo {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}

@@ -1,0 +1,28 @@
+.container-fluid{
+    background-color: rgb(151, 175, 175) ;
+}
+nav ul li {
+    list-style-type: none;
+   
+    ul li{
+        list-style-type: none; 
+    }
+}
+
+
+a {
+    color: rgb(172, 78, 47);
+    text-decoration: none;
+    margin-left: 0.5em;
+
+}
+.sitios,  .loguito {
+    display: flex;
+    font-display: flex;
+    justify-content: center;
+
+    .loguito {
+        width: 100px;
+        height: 100px;
+    }
+}

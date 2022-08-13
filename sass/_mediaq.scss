@@ -1,0 +1,168 @@
+/*media index*/
+@media (min-width:500px) {
+    .envoltura {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "header    header"
+            "imagenu   imagenu"
+            "huno      huno"
+            "elparrafo elparrafo"
+            "eventos   redes"
+            "footer    footer";
+        gap: 20px;
+
+    }
+
+    .sitios, .loguito {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1, .elParrafo {
+
+        border: 0.5em solid rgb(62, 85, 85);
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .event{
+        width:1000px;
+        height: 350px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+}
+
+
+
+@media (min-width:768px) {
+    .envoltura {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "header    header       header"
+            "imagenu   imagenu      imagenu"
+            "huno      huno         huno"
+            "elparrafo elparrafo    elparrafo"
+            "eventos   eventos      redes"
+            "footer    footer       footer";
+        gap: 20px;
+    }
+
+    a {
+        color: black;
+    }
+    .container-fluid{
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+    }
+    h1 {
+        color: black;
+        border: 3px solid white;
+    }
+
+    .elParrafo, h2 {
+        color: darkslategrey;
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    .elParrafo {
+        border: 3em solid darkslategrey;
+    }
+
+    h1 {
+        background-color: rgb(252, 191, 169);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .elParrafo {
+        background-color: rgb(228, 144, 114);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .loguito {
+        border: 0.5em solid rgb(252, 191, 169);
+    }
+
+    h3 {
+        color: black;
+    }
+
+    footer {
+        margin-top: 1.5em;
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .sitios {
+        margin: 2em 10em 2em 10em;
+    }
+    .btn.btn-primary{
+        background-color:rgb(91, 74, 100) ;
+        border: none;
+    }
+    .imagenUno,  h1, .elParrafo,  .eventos,.redes {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .loguito {
+        border: 0.5em solid rgb(252, 191, 169);
+    }
+
+    .elParrafo, h2 {
+        color: rgb(104, 60, 85);
+    }
+
+    .elParrafo {
+        border: 1em solid rgb(241, 145, 110);
+    }
+
+    h1 {
+        color: rgb(133, 46, 95);
+    }
+
+    img {
+        width: 475px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .event{
+        width:1050px;
+        height: 350px;
+    }
+}
