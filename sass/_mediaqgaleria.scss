@@ -1,0 +1,68 @@
+
+@media (min-width:500px) {
+    .envolturaTres {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "htres        htres"
+            "productos    productos"
+            "fotosprod    fotosprod"
+            "redesss      redesss"
+            "footerrr     footerrr";
+        gap: 20px;
+
+    }
+}
+
+@media (min-width:768px) {
+    .envolturaTres {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "htres        htres         htres"
+            "productos    productos     productos"
+            "fotosprod    fotosprod     fotosprod"
+            "redesss      redesss       redesss"
+            "footerrr     footerrr      footerrr";
+        gap: 20px;
+    }
+
+    .avone,
+    .avtwo,
+    .avthree {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgTres {
+        width: 250px;
+        height: 250px;
+        margin: 1.5em 1.5em 1.5em 1.5em;
+    }
+
+    .texto {
+        text-align: center;
+        border: 0.5em;
+        background-color: rgb(151, 175, 175);
+        margin-left: 1em;
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .imgTres {
+        width: 350px;
+        height: 350px;
+        margin: 2em 3em 2em 3em;
+
+    }
+
+    .texto {
+        background-color: rgb(252, 191, 169);
+    }
+}

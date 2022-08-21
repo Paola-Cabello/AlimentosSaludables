@@ -1,0 +1,43 @@
+
+@media (min-width:500px) {
+    .envolturaCinco {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "hcinco      hcinco"
+            "info        info"
+            "redesdos    redesdos"
+            "footerdos   footerdos";
+        gap: 20px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .envolturaCinco {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "hcinco      hcinco      hcinco"
+            "info        info        info"
+            "redesdos    redesdos    redesdos"
+            "footerdos   footerdos   footerdos";
+        gap: 20px;
+    }
+
+    .importante {
+        border: 1em solid rgb(151, 175, 175);
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .importante {
+        border: 1em solid rgb(241, 145, 110);
+    }
+}

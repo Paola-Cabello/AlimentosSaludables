@@ -1,0 +1,85 @@
+.envolturaDos {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "hdos"
+        "mandados"
+        "budyalf"
+        "rowuno"
+        "mym"
+        "rowdos"
+        "redess"
+        "footerr";
+    gap: 20px;
+}
+
+
+
+.mandados {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.budyalf {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.rowUno {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.mym {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.rowDos {
+    background-color: rgb(252, 191, 169);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.moto {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.whatsapp {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.h2,
+.mym,
+.mandados {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+body {
+    background-color: rgb(252, 191, 169);
+}

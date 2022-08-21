@@ -1,0 +1,24 @@
+.envolturaCinco {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "hcinco"
+        "info"
+        "redesdos"
+        "footerdos";
+    gap: 20px;
+}
+
+iframe {
+    border: 0.5em solid rgb(62, 85, 85);
+}
+
+.benef {
+    margin-bottom: 1em;
+}
+
+.beneficios {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

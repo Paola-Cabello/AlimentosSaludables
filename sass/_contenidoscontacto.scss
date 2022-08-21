@@ -1,0 +1,48 @@
+.envolturaCuatro {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "hcuatro"
+        "imagenn"
+        "contactanos"
+        "datos"
+        "redesuno"
+        "footeruno";
+    gap: 20px;
+}
+
+/*map*/
+$sitios:(inicio: rgb(186, 140, 197),
+    pedido: rgb(202, 169, 192),
+);
+
+@each $sit,
+$color in $sitios {
+    .btn--#{$sit} {
+        background-color: $color;
+    }
+}
+
+.sittios {
+    margin-top: 1em;
+}
+
+.btn--inicio {
+    @extend .sittios;
+    margin-bottom: 1em;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.btn--inicio {
+    @include sizes(50px, 30px);
+}
+
+
+.datos {
+    border: 1em solid rgb(62, 85, 85);
+}

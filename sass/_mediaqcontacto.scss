@@ -1,0 +1,66 @@
+
+@media (min-width:500px) {
+    .envolturaCuatro {
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-areas:
+            "hcuatro       hcuatro"
+            "imagenn       imagenn"
+            "contactanos   contactanos"
+            "datos         datos"
+            "redesuno      redesuno"
+            "footeruno     footeruno";
+        gap: 20px;
+
+    }
+
+    .avena {
+        width: 400px;
+        height: 60px;
+        border: 0.5em solid black;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .contactto {
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width:768px) {
+    .envolturaCuatro {
+        background: rgb(252, 191, 169);
+        background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+            "hcuatro       hcuatro         hcuatro"
+            "imagenn       imagenn         imagenn"
+            "contactanos   contactanos     contactanos"
+            "datos         datos           datos"
+            "redesuno      redesuno        redesuno"
+            "footeruno     footeruno       footeruno"
+        ;
+        gap: 20px;
+    }
+
+    .avena {
+        width: 600px;
+        height: 70px;
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+        background-color: rgb(184, 199, 199);
+    }
+
+    .avena {
+        width: 700px;
+        height: 70px;
+    }
+
+    .datos {
+        border: 1em solid rgb(241, 145, 110);
+    }
+}

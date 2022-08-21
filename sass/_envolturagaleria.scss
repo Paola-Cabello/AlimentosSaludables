@@ -1,0 +1,12 @@
+.envolturaTres {
+    background-color: rgb(151, 175, 175);
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "htres"
+        "productos"
+        "fotosprod"
+        "redesss"
+        "footerrr";
+    gap: 20px;
+}
