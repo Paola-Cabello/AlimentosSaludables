@@ -4,14 +4,12 @@
 @import "nav";
 @import"eventos";
 @import "redes";
-@import "grilla";
-@import "footer";
 @import "grillas";
 @import "envolturas";
 
 
-.btn.btn-primary{
-    background-color:rgb(102, 139, 138) ;
+.btn.btn-primary {
+    background-color: rgb(102, 139, 138);
     border: none;
 }
 
@@ -34,9 +32,11 @@ footer {
     margin-bottom: 0;
     margin-top: 1.5em;
 }
+
 footer {
     margin-top: 0;
 }
+
 @import "mediaq";
 
 
@@ -148,7 +148,9 @@ footer {
     border: none;
 }
 
-.h2,.mym,.mandados {
+.h2,
+.mym,
+.mandados {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -174,7 +176,9 @@ body {
         gap: 20px;
     }
 
-    .moto,  .whatsapp, .in {
+    .moto,
+    .whatsapp,
+    .in {
         border: 3px solid rgb(62, 85, 85);
     }
 
@@ -219,7 +223,10 @@ body {
         margin: 0.5em 0.5em 0.5em 0.5em;
     }
 
-    .avUno, .avDos, .avTres,  .avCuatro {
+    .avUno,
+    .avDos,
+    .avTres,
+    .avCuatro {
         display: flex;
         margin-left: 1.5em;
         margin-right: 1.5em;
@@ -231,7 +238,11 @@ body {
         background-color: rgb(184, 199, 199);
     }
 
-    .mandados,.budyalf,.rowUno,.mym,.rowDos {
+    .mandados,
+    .budyalf,
+    .rowUno,
+    .mym,
+    .rowDos {
         background-color: rgb(184, 199, 199);
     }
 
@@ -311,7 +322,9 @@ footer {
         gap: 20px;
     }
 
-    .avone, .avtwo, .avthree {
+    .avone,
+    .avtwo,
+    .avthree {
         display: flex;
         justify-content: center;
     }
@@ -386,6 +399,35 @@ footer {
     gap: 20px;
 }
 
+/*map*/
+$sitios:(inicio: rgb(186, 140, 197),
+    pedido: rgb(202, 169, 192),
+);
+
+@each $sit,
+$color in $sitios {
+    .btn--#{$sit} {
+        background-color: $color;
+    }
+}
+
+.sittios {
+    margin-top: 1em;
+}
+
+.btn--inicio {
+    @extend .sittios;
+    margin-bottom: 1em;
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.btn--inicio {
+    @include sizes(50px, 30px);
+}
 
 
 .datos {
@@ -486,9 +528,11 @@ footer {
         "footerdos";
     gap: 20px;
 }
-iframe{
-    border: 0.5em solid  rgb(62, 85, 85);
+
+iframe {
+    border: 0.5em solid rgb(62, 85, 85);
 }
+
 .benef {
     margin-bottom: 1em;
 }

@@ -58,6 +58,7 @@ a {
   margin-left: 0.5em;
 }
 
+
 footer {
   padding: 3em;
   background-color: rgb(151, 175, 175);
@@ -363,6 +364,10 @@ footer {
   grid-template-areas: "hdos" "mandados" "budyalf" "rowuno" "mym" "rowdos" "redess" "footerr";
   gap: 20px;
 }
+.inputt{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
 .mandados {
   background-color: rgb(252, 191, 169);
@@ -597,6 +602,30 @@ footer {
   grid-template-areas: "hcuatro" "imagenn" "contactanos" "datos" "redesuno" "footeruno";
   gap: 20px;
 }
+
+/*map*/
+.btn--inicio {
+  background-color: rgb(186, 140, 197);
+}
+
+.btn--pedido {
+  background-color: rgb(202, 169, 192);
+}
+
+.sittios, .btn--inicio {
+  margin-top: 1em;
+}
+
+.btn--inicio {
+  margin-bottom: 1em;
+}
+
+.btn--inicio {
+  height: 30px;
+  width: 50px;
+}
+
+
 
 .datos {
   border: 1em solid rgb(62, 85, 85);
