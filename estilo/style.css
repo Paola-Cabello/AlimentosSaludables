@@ -74,8 +74,8 @@ a {
   justify-content: center;
 }
 .sitios .loguito, .loguito .loguito {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .event {
@@ -98,12 +98,6 @@ a {
   justify-items: center;
 }
 
-.redes {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-items: end;
-}
 
 .redes {
   background-color: rgb(252, 191, 169);
@@ -119,7 +113,26 @@ a {
   height: 60px;
   border: none;
 }
+.loguitoDos {
+  width: 200px;
+  height: 200px;
+}
+.icon:hover {
+  -webkit-animation: iconos 9s;
+          animation: iconos 9s;
+}
 
+@-webkit-keyframes iconos {
+  0% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes iconos {
+  0% {
+    transform: scale(0.9);
+  }
+}
 /*declar el área de grilla*/
 header {
   grid-area: header;
@@ -174,6 +187,14 @@ img {
   border: 0.5em solid black;
   margin-top: 5em;
 }
+.redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 
 footer {
   padding: 3em;
@@ -206,9 +227,10 @@ footer {
   }
   .redes {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
   }
   img {
     width: 350px;
@@ -218,6 +240,7 @@ footer {
     width: 1000px;
     height: 350px;
   }
+ 
   footer {
     margin-top: 0;
   }
@@ -266,12 +289,16 @@ footer {
     gap: 15px;
     justify-items: center;
   }
-  .loguito {
+  .loguito{
+    border: 0.5em solid rgb(252, 191, 169);
+  }
+  .loguitoDos {
     border: 0.5em solid rgb(252, 191, 169);
   }
   h3 {
     color: black;
   }
+  
   footer {
     margin-top: 1.5em;
     background: radial-gradient(circle, rgb(178, 167, 230) 0%, rgb(57, 129, 154) 100%);
@@ -294,6 +321,9 @@ footer {
   .loguito {
     border: 0.5em solid rgb(252, 191, 169);
   }
+  .loguitoDos {
+    border: 0.5em solid rgb(252, 191, 169);
+  }
   .elParrafo, h2 {
     color: rgb(104, 60, 85);
   }
@@ -304,13 +334,15 @@ footer {
     color: rgb(133, 46, 95);
   }
   img {
-    width: 475px;
-    height: 400px;
-    margin-top: 20px;
+      margin-top: 20px;
   }
   .event {
     width: 1050px;
     height: 350px;
+  }
+  .loguitoDos {
+    width: 200px;
+    height: 200px;
   }
 }
 /*declarar grid haz tu pedido*/
@@ -417,7 +449,22 @@ footer {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+.imgDos:hover {
+  -webkit-animation: alfajores 4s;
+          animation: alfajores 4s;
+}
 
+@-webkit-keyframes alfajores {
+  0% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes alfajores {
+  0% {
+    transform: scale(0.9);
+  }
+}
 body {
   background-color: rgb(252, 191, 169);
 }
@@ -520,6 +567,22 @@ footer {
   gap: 20px;
 }
 
+.imgTres:hover {
+  -webkit-animation: budin 4s;
+          animation: budin 4s;
+}
+
+@-webkit-keyframes budin {
+  0% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes budin {
+  0% {
+    transform: scale(0.9);
+  }
+}
 @media (min-width: 500px) {
   .envolturaTres {
     margin-bottom: 1.5em;
@@ -708,7 +771,9 @@ iframe {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
+ul li {
+  list-style-type: none;
+}
 @media (min-width: 500px) {
   .envolturaCinco {
     margin-bottom: 1.5em;

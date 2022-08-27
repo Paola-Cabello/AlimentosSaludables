@@ -30,10 +30,11 @@
 
     .redes {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-end
-    }
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+      }
 
     img {
         width: 350px;
@@ -44,7 +45,7 @@
         width:1000px;
         height: 350px;
     }
-
+  
     footer {
         margin-top: 0;
     }
@@ -108,14 +109,17 @@
         justify-items: center;
     }
 
-    .loguito {
+    .loguito{
+        border: 0.5em solid rgb(252, 191, 169);
+    }
+    .loguitoDos{
         border: 0.5em solid rgb(252, 191, 169);
     }
 
     h3 {
         color: black;
     }
-
+   
     footer {
         margin-top: 1.5em;
         background: radial-gradient(circle, rgba(178, 167, 230, 1) 0%, rgba(57, 129, 154, 1) 100%);
@@ -141,6 +145,9 @@
     .loguito {
         border: 0.5em solid rgb(252, 191, 169);
     }
+    .loguitoDos{
+        border: 0.5em solid rgb(252, 191, 169);
+    }
 
     .elParrafo, h2 {
         color: rgb(104, 60, 85);
@@ -155,12 +162,14 @@
     }
 
     img {
-        width: 475px;
-        height: 400px;
-        margin-top: 20px;
+       margin-top: 20px;
     }
     .event{
         width:1050px;
         height: 350px;
     }
+    .loguitoDos {
+        width: 200px;
+        height: 200px;
+      }
 }

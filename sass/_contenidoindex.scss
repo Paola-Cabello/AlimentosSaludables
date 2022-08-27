@@ -16,3 +16,10 @@ img {
     border: 0.5em solid black;
     margin-top: 5em;
 }
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }

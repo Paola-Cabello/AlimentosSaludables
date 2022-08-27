@@ -1,9 +1,4 @@
-.redes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-items: end
-}
+
 .redes {
     background-color: rgb(252, 191, 169);
     display: grid;
@@ -17,3 +12,13 @@
     height: 60px;
     border: none;
 }
+.loguitoDos{
+    width: 200px;
+    height: 200px;
+}
+.icon:hover{
+    animation: iconos 9s;
+}
+@keyframes iconos{
+    0%{transform: scale(0.9) ;
+}}

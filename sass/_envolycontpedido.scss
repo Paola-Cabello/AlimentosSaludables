@@ -79,7 +79,12 @@
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
-
+.imgDos:hover{
+    animation: alfajores 4s;
+}
+@keyframes alfajores{
+    0%{transform: scale(0.9) ;
+}}
 body {
     background-color: rgb(252, 191, 169);
 }

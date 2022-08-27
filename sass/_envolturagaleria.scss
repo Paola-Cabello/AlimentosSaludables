@@ -10,3 +10,9 @@
         "footerrr";
     gap: 20px;
 }
+.imgTres:hover{
+    animation: budin 4s;
+}
+@keyframes budin{
+    0%{transform: scale(0.9) ;
+}}
