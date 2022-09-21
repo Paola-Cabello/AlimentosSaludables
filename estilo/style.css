@@ -98,7 +98,6 @@ a {
   justify-items: center;
 }
 
-
 .redes {
   background-color: rgb(252, 191, 169);
   display: grid;
@@ -113,10 +112,12 @@ a {
   height: 60px;
   border: none;
 }
+
 .loguitoDos {
   width: 200px;
   height: 200px;
 }
+
 .icon:hover {
   -webkit-animation: iconos 9s;
           animation: iconos 9s;
@@ -187,6 +188,7 @@ img {
   border: 0.5em solid black;
   margin-top: 5em;
 }
+
 .redes {
   display: flex;
   flex-direction: row;
@@ -194,7 +196,6 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 
 footer {
   padding: 3em;
@@ -240,7 +241,6 @@ footer {
     width: 1000px;
     height: 350px;
   }
- 
   footer {
     margin-top: 0;
   }
@@ -289,7 +289,7 @@ footer {
     gap: 15px;
     justify-items: center;
   }
-  .loguito{
+  .loguito {
     border: 0.5em solid rgb(252, 191, 169);
   }
   .loguitoDos {
@@ -298,7 +298,6 @@ footer {
   h3 {
     color: black;
   }
-  
   footer {
     margin-top: 1.5em;
     background: radial-gradient(circle, rgb(178, 167, 230) 0%, rgb(57, 129, 154) 100%);
@@ -334,7 +333,7 @@ footer {
     color: rgb(133, 46, 95);
   }
   img {
-      margin-top: 20px;
+    margin-top: 20px;
   }
   .event {
     width: 1050px;
@@ -449,6 +448,7 @@ footer {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+
 .imgDos:hover {
   -webkit-animation: alfajores 4s;
           animation: alfajores 4s;
@@ -561,6 +561,7 @@ footer {
 
 .envolturaTres {
   background-color: rgb(151, 175, 175);
+  margin-right: 0em;
   margin-bottom: 1.5em;
   display: grid;
   grid-template-areas: "htres" "productos" "fotosprod" "redesss" "footerrr";
@@ -771,9 +772,11 @@ iframe {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
 ul li {
   list-style-type: none;
 }
+
 @media (min-width: 500px) {
   .envolturaCinco {
     margin-bottom: 1.5em;
