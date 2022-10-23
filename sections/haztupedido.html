@@ -57,17 +57,17 @@
     <!-- cierre de fila logo + nav -->
     <section class="mandados">
         <div>
-            <img class="moto" src="https://img.icons8.com/ios-filled/50/000000/dirt-bike.png" /> <input type="text"
-                placeholder="DECIME TU DIRECCIÓN">
+            <img class="moto" src="https://img.icons8.com/ios-filled/50/000000/dirt-bike.png" /> <input type="text" id="direc"
+                placeholder="DECIME TU DIRECCIÓN"/>
         </div>
         <div>
-            <img class="whatsapp" src="https://img.icons8.com/clouds/100/000000/whatsapp.png" /> <input type="text"
-                placeholder="HAZ TU PEDIDO POR WHATSAPP">
+            <img class="whatsapp" src="https://img.icons8.com/clouds/100/000000/whatsapp.png" /> <input type="text" id="mensaj"
+                placeholder="HAZ TU PEDIDO POR WHATSAPP"/>
         </div>
 
     </section>
     <div>
-        <button class="inputt" type="button"
+        <button id="boton" class="inputt"  type="button"
             class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">ENVIAR</button>
     </div>
     <h1>PEDIDOS</h1>
@@ -79,26 +79,22 @@
 
         <section class="avUno">
             <div>
-                <img class="imgDos" src="../images/11.jpg" alt="budín integral con avena y frutos del bosque">
-                <input class="in" type="reset" value="Agregar">
+                <img class="imgDos" src="../images/11.jpg" alt="budín integral con avena y frutos del bosque"><p class="texto">$800</p>
+                <button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
             <div>
-                <img class="imgDos" src="../images/9.jpg" alt="budín de chocolate y frutilla"> <input class="in"
-                    type="reset" value="Agregar">
+                <img class="imgDos" src="../images/9.jpg" alt="budín de chocolate y frutilla"><p class="texto">$800</p> <button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
         </section>
         <section class="avDos">
             <div>
-                <img class="imgDos" src="../images/8.jpg" alt="budín de chocolate y maní"> <input class="in"
-                    type="reset" value="Agregar">
+                <img class="imgDos" src="../images/8.jpg" alt="budín de chocolate y maní"><p class="texto">$800</p> <button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
             <div>
-                <img class="imgDos" src="../images/3.jpg" alt="alfajores y budín con baño de chocolate"> <input
-                    class="in" type="reset" value="Agregar">
+                <img class="imgDos" src="../images/3.jpg" alt="alfajores y budín con baño de chocolate"> <p class="texto">$1500</p><button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
             <div>
-                <img class="imgDos" src="../images/4.jpg" alt="budín marmolado con nueces"> <input class="in"
-                    type="reset" value="Agregar">
+                <img class="imgDos" src="../images/4.jpg" alt="budín marmolado con nueces"> <p class="texto">$800</p> <button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
         </section>
     </div>
@@ -107,19 +103,16 @@
     <div class="rowDos">
         <section class="avTres">
             <div>
-                <img class="imgDos" src="../images/13.png" alt="muffin de chocolate y vainilla"> <input class="in"
-                    type="reset" value="Agregar">
+                <img class="imgDos" src="../images/13.png" alt="muffin de chocolate y vainilla"><p class="texto">$100 c/u</p> <button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
         </section>
         <section class="avCuatro">
             <div>
-                <img class="imgDos" src="../images/10.jpg" alt="muffin de frutos del bosque y membrillo"> <input
-                    class="in" type="reset" value="Agregar">
+                <img class="imgDos" src="../images/10.jpg" alt="muffin de frutos del bosque y membrillo"> <p class="texto">$150 c/u</p><button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
 
             <div>
-                <img class="imgDos" src="../images/12.png" alt="masas de limón y avena"> <input class="in" type="reset"
-                    value="Agregar">
+                <img class="imgDos" src="../images/12.png" alt="masas de limón y avena"> <p class="texto">$80 c/u</p><button  class="inputt"  type="button" class="btn btn-secondary btn-sm p-3 mb-2 bg-light text-dark">Agregar</button>
             </div>
 
         </section>
@@ -148,6 +141,7 @@
         <h3>DIRECCIÓN: Ruiz Moreno 1025</h3>
     </footer>
     <!-- cierre de footer -->
+    <script src="../JavaS/mainHaztuP.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

@@ -1,6 +1,6 @@
 //PROMPT
 //prompt("por favor ingresa tu nombre")
-let nombreUsuario = prompt("cual es tu nombre?");
+let nombreUsuario = prompt("cual es tu nombre y apellido?");
 
 console.log(nombreUsuario);
 
@@ -32,7 +32,7 @@ if (gustoFavorito.toLowerCase() == "avena"){
 //CICLOS
 //POR CONTEO
 for(let i = 1; i <= 20; i ++){
-    let ingresaApellidoyNombre = prompt ("ingrese su apellido y nombre");
+    let ingresaApellidoyNombre = prompt ("ingrese nuevamente su apellido y nombre");
     alert("cliente numero "+i+" nombre" +ingresaApellidoyNombre);
     if(i == 1){
         break;
@@ -113,12 +113,10 @@ const cabrera = new Cliente("Cabrera", "Alejandra", 3442489562, "Ereño 145");
 
 console.log(cabrera);
 
-let apellidoCliente = prompt ("Cual es tu apellido?");
-let nombreCliente = prompt ("Cual es tu nombre?");
 let telefonoCliente = parseInt(prompt ("Cual es tu telefono?"));
 let direccionCliente = prompt ("Cual es tu direccion?");
 
-const  cliente = new Cliente(apellidoCliente, nombreCliente, telefonoCliente, direccionCliente);
+const  cliente = new Cliente(telefonoCliente, direccionCliente);
 console.log(cliente);
 
 
@@ -150,9 +148,8 @@ const listaCompleta= listaPedido.concat(listaEvento);
 console.log(listaCompleta);
 
 class NuevoPedido {
-    constructor(nombre, apellido, alimento, retira, costo) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    constructor(alimento, retira, costo) {
+      
         this.alimento = alimento;
         this.retira = retira;
         this.costo = costo;
@@ -162,13 +159,12 @@ class NuevoPedido {
 const listaNueva = [];
 
 const agregarPedido = () => {
-    let nombre = prompt ("Cual es el nombre?");
-    let apellido = prompt ("Cual es el apellido?");
-    let alimento= prompt ("Cuales son los alimientos?");
+ 
+    let alimento= prompt ("Cuales son los alimientos encargados?");
     let retira = parseInt(prompt ("A que hora retira el pedido?"));
     let costo = parseFloat(prompt ("Cual es el costo total?"));
 
-    let nuevoPed = new NuevoPedido (nombre, apellido, alimento, retira, costo);
+    let nuevoPed = new NuevoPedido (alimento, retira, costo);
 
     listaNueva.push(nuevoPed);
     return listaNueva;
@@ -226,3 +222,47 @@ console.log(totalCompra)
 //Sort
 alimentos.sort();
 console.log(alimentos)
+
+//Dom
+
+console.dir(document.body)
+
+//Acceder al DOM
+//id 
+
+let parrafoUno = document.getElementById("parrafoUno");
+console.log(parrafoUno);
+
+//Class
+
+let parrafo = document.getElementsByClassName("parrafoDos");
+console.log(parrafo);
+
+//Etiqueta
+
+let titulo = document.getElementsByTagName("h1");
+console.log(titulo);
+
+for(const parrafoDos of parrafo) {
+    console.log(parrafoDos.innerHTML)
+}
+
+//Por selector
+console.log(document.querySelectorAll("p"));
+
+//Modificar contenido
+//InnerText
+parrafoUno.innerText = "Somos una pequeña empresa familiar que realizamos alimentos dulces con avena y harina integral.";
+
+let nuevoDiv = document.createElement("h2");
+nuevoDiv.setAttribute("id","nuevoTitulo");
+nuevoDiv.innerHTML = "¡Si tienes un evento, nosotros te lo organizamos!";
+console.log(nuevoDiv);
+
+document.getElementById("nuevoDiv").append(nuevoDiv);
+
+//Quitar
+let nuevoD = document.getElementById("nuevoDiv");
+nuevoD.append(nuevoDiv);
+nuevoD.remove(nuevoDiv);
+
