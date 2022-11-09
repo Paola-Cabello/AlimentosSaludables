@@ -11,10 +11,9 @@ boton.addEventListener("click",(e)=>{
     let mensaj = document.getElementById("mensaj").value;
     e.preventDefault();
     localStorage.setItem("mensaj", mensaj);
-    let direc = document.getElementById("direc").value;
-    e.preventDefault();
-    localStorage.setItem("direc", direc);
 })
+
+
 
 for(let i=0; i < localStorage.length; i++){
     let clave = localStorage.key(i);
@@ -22,3 +21,20 @@ for(let i=0; i < localStorage.length; i++){
 
     console.log(`La clave es ${clave} y el valor es ${valor}`);
 }
+
+let ingredientesFaltantes = [
+    { 
+        nombre: "educorante",
+        precio: 150
+
+    },
+    {
+        nombre: "avena",
+        precio: 500
+    }
+]
+
+localStorage.setItem("ingredientesFaltantes", JSON.stringify(ingredientesFaltantes));
+
+console.log(JSON.parse(localStorage.getItem("ingredientesFaltantes")))
+

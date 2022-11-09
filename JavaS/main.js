@@ -1,6 +1,6 @@
 //PROMPT
 //prompt("por favor ingresa tu nombre")
-let nombreUsuario = prompt("cual es tu nombre y apellido?");
+let nombreUsuario = prompt("Hola cual es tu nombre y apellido?");
 
 console.log(nombreUsuario);
 
@@ -114,7 +114,7 @@ const cabrera = new Cliente("Cabrera", "Alejandra", 3442489562, "Ereño 145");
 console.log(cabrera);
 
 let telefonoCliente = parseInt(prompt ("Cual es tu telefono?"));
-let direccionCliente = prompt ("Cual es tu direccion?");
+let direccionCliente = prompt ("Cual es la direccion en donde se realiza tu evento?");
 
 const  cliente = new Cliente(telefonoCliente, direccionCliente);
 console.log(cliente);
@@ -133,7 +133,7 @@ for (let i=0; i < listaPedido.length; i++) {
     console.log(listaPedido[i]);
 }
 
-listaPedido.push("Hora del pedido 17hs");
+listaPedido.push("Hora del pedido para el evento 17hs");
 console.log(listaPedido);
 
 listaPedido.unshift("Costo 1200");
@@ -161,7 +161,7 @@ const listaNueva = [];
 const agregarPedido = () => {
  
     let alimento= prompt ("Cuales son los alimientos encargados?");
-    let retira = parseInt(prompt ("A que hora retira el pedido?"));
+    let retira = parseInt(prompt ("A que hora retira el pedido para el evento?"));
     let costo = parseFloat(prompt ("Cual es el costo total?"));
 
     let nuevoPed = new NuevoPedido (alimento, retira, costo);
@@ -188,6 +188,10 @@ const listaPrecios = [
     {nombre: "alfajores", precio: 150},
     {nombre: "masas", precio: 70},
 ];
+
+//Spread
+
+console.log(...alimentos)
 
 //Foreach
 
@@ -266,3 +270,39 @@ let nuevoD = document.getElementById("nuevoDiv");
 nuevoD.append(nuevoDiv);
 nuevoD.remove(nuevoDiv);
 
+//Acceso a condicional a un objeto
+
+const usuario={
+    nombre: "Juliana",
+    apellido: "Chabeuf",
+    vivienda: {
+        direccion: "Estrada 1269",
+        celular: "3442515123"
+    }
+}
+
+//Asincronía
+setTimeout( ()=> {
+console.log(usuario?.vivienda?.direccion || "La dirección cambio")
+}, 2000)
+
+clearTimeout(direccion)
+
+console.log(usuario?.vivienda?.edad || "La edad no se pidio")
+
+//Desestructuración 
+
+let {nombre, apellido, vivienda: {celular}} = usuario;
+console.log(celular)
+
+
+//Promesas
+
+const promesa = new Promise((resolve, reject) => {
+ 
+    setTimeout(()=> resolve(`Hola, felicitaciones has logrado nuevos clientes`), 5000);
+});
+
+promesa.then(value => console.log(value));
+
+console.log(promesa)
